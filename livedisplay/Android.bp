@@ -17,8 +17,8 @@ cc_defaults {
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
-        ":vendor.lineage.livedisplay@2.0-sdm-utils",
+        ":vendor.mokee.livedisplay@2.0-sdm-pa",
+        ":vendor.mokee.livedisplay@2.0-sdm-utils",
         "AdaptiveBacklight.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
@@ -30,16 +30,16 @@ cc_defaults {
         "libdl",
         "libhidlbase",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
+        "vendor.mokee.livedisplay@2.0",
     ],
     header_libs: [
-        "vendor.lineage.livedisplay@2.0-sdm-headers",
+        "vendor.mokee.livedisplay@2.0-sdm-headers",
     ],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.0-service-sysfs.motorola_lito",
-    init_rc: ["vendor.lineage.livedisplay@2.0-service-sysfs.motorola_lito.rc"],
+    name: "vendor.mokee.livedisplay@2.0-service-sysfs.motorola_lito",
+    init_rc: ["vendor.mokee.livedisplay@2.0-service-sysfs.motorola_lito.rc"],
     defaults: ["livedisplay_motorola_lito"],
     vendor: true,
 }

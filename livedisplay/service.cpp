@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.0-service-sysfs.motorola_lito"
+#define LOG_TAG "vendor.mokee.livedisplay@2.0-service-sysfs.motorola_lito"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -27,8 +27,8 @@ using ::android::status_t;
 using ::android::hardware::configureRpcThreadpool;
 using ::android::hardware::joinRpcThreadpool;
 
-using ::vendor::lineage::livedisplay::V2_0::sysfs::AdaptiveBacklight;
-using ::vendor::lineage::livedisplay::V2_0::sysfs::SunlightEnhancement;
+using ::vendor::mokee::livedisplay::V2_0::sysfs::AdaptiveBacklight;
+using ::vendor::mokee::livedisplay::V2_0::sysfs::SunlightEnhancement;
 
 status_t RegisterAsServices() {
     status_t status = OK;

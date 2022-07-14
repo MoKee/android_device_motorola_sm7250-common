@@ -16,10 +16,10 @@
 
 #pragma once
 
-#include <vendor/lineage/livedisplay/2.0/ISunlightEnhancement.h>
+#include <vendor/mokee/livedisplay/2.0/ISunlightEnhancement.h>
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -31,7 +31,7 @@ class SunlightEnhancement : public ISunlightEnhancement {
     SunlightEnhancement();
     bool isSupported();
 
-    // Methods from ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement follow.
+    // Methods from ::vendor::mokee::livedisplay::V2_0::ISunlightEnhancement follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 
@@ -43,5 +43,5 @@ class SunlightEnhancement : public ISunlightEnhancement {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor

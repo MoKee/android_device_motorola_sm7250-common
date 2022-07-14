@@ -32,7 +32,7 @@ namespace {
 }  // anonymous namespace
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -54,7 +54,7 @@ bool AdaptiveBacklight::isSupported() {
     return true;
 }
 
-// Methods from ::vendor::lineage::livedisplay::V2_0::IAdaptiveBacklight follow.
+// Methods from ::vendor::mokee::livedisplay::V2_0::IAdaptiveBacklight follow.
 Return<bool> AdaptiveBacklight::isEnabled() {
     std::string tmp;
     int32_t contents = 0;
@@ -73,5 +73,5 @@ Return<bool> AdaptiveBacklight::setEnabled(bool enabled) {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor
